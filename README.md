@@ -1,7 +1,7 @@
 
 <h1 align="center">Welcome COVID-19 Dashboard👋</h1>
 
-<img alt="Covid Stats Live Dashboard" src="https://coronastatistics.live/assets/images/preview.png" />
+<img alt="COVID-19" src="http://covid19-angular-express.s3-website.us-east-2.amazonaws.com/assets/images/covid-19.png" />
 
 ### 🏠 [Homepage](https://github.com/richcheng/covid19-angular)
 
@@ -10,10 +10,8 @@
 
 ## Screenshots
 
-<img alt="Covid Stats Live Dashboard Screenshot 1" src="https://coronastatistics.live/screenshots/sc1.png" />
-<img alt="Covid Stats Live Dashboard Screenshot 2" src="https://coronastatistics.live/screenshots/sc2.png" />
-<img alt="Covid Stats Live Dashboard Screenshot 3" src="https://coronastatistics.live/screenshots/sc3.png" />
-<img alt="Covid Stats Live Dashboard Screenshot 4" src="https://coronastatistics.live/screenshots/sc4.png" />
+<img alt="COVID-19 Dashboard Screenshot-world" src="http://covid19-angular-express.s3-website.us-east-2.amazonaws.com/assets/screenshots/sc1.png" />
+<img alt="COVID-19 Dashboard Screenshot-USA" src="http://covid19-angular-express.s3-website.us-east-2.amazonaws.com/assets/screenshots/sc2.png" />
 
 ## Build the Angular project
 
