@@ -9,7 +9,6 @@ const csv = require('csvtojson')
 
 let basePathHistory = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/";
 
-
 app.use(cors());
 
 // create redis instance :O
@@ -18,7 +17,6 @@ const redis = new Redis(config.redis.host, {
 })
 
 const keys = config.keys
-
 
 var getAll = async () => {
   let response;

@@ -6,30 +6,32 @@
         <div class="modal-body text-center pt-4">
 
           <div *ngIf="modalStep == 1" class="modal-step" [@fadeInOutAnimation]>
+            <img src="assets/images/coronavirus.png" width="125">
             <img src="assets/images/step-1.png" width="125">
-            <h5 class="text-white mt-3">KNOW HOW IT <span class="text-blue">SPREADS</span></h5>
-            <h6 class="text-white">There is currently No Vaccine to prevent <span class="text-danger">COVID-19</span>
+            <img src="assets/images/coronavirus.png" width="125">
+            <h5 class="text-white mt-3">KNOW HOW IT <span class="text-danger">SPREADS</span></h5>
+            <h6 class="text-white">There is currently No Vaccine to prevent <span class="text-info">COVID-19</span>
             </h6>
             <p>The virus is thought to spread mainly from person-to-person contact
               through respiratory droplets produced when an infected person coughs or sneezes.</p>
           </div>
           <div *ngIf="modalStep == 2" class="modal-step" [@fadeInOutAnimation]>
             <img src="assets/images/step-2.png" width="125">
-            <h5 class="text-white mt-3">TAKE STEPS TO <span class="text-blue">PROTECT YOURSELF</span></h5>
+            <h5 class="text-white mt-3">TAKE STEPS TO <span class="text-danger">PROTECT YOURSELF</span></h5>
             <p>Frequently Wash your hands with soap and water for at least 20 seconds. Always Carry a hand sanitizer
               that contains at least 60% alcohol.
               Avoid touching your eyes, nose, and mouth with unwashed hands.</p>
           </div>
           <div *ngIf="modalStep == 3" class="modal-step" [@fadeInOutAnimation]>
             <img src="assets/images/step-3.png" width="125">
-            <h5 class="text-white mt-3">AVOID <span class="text-blue">CLOSE CONTACT</span></h5>
+            <h5 class="text-white mt-3">AVOID <span class="text-danger">CLOSE CONTACT</span></h5>
             <p>Avoid close contact with people who are sick. Put distance between yourself and other people if
               COVID-19/Coronavirus is spreading in your community.</p>
 
           </div>
           <div *ngIf="modalStep == 4" class="modal-step" [@fadeInOutAnimation]>
             <img src="assets/images/step-4.png" width="125">
-            <h5 class="text-white mt-3">TAKE STEPS TO <span class="text-blue">PROTECT YOURSELF</span></h5>
+            <h5 class="text-white mt-3">TAKE STEPS TO <span class="text-danger">PROTECT YOURSELF</span></h5>
             <p>
               Cover your mouth and nose with a tissue when you cough or sneeze or use the inside of your elbow.
               Immediately wash your hands with soap and water for at least 20 seconds or clean your hands with a
@@ -38,7 +40,7 @@
           </div>
           <div *ngIf="modalStep == 5" class="modal-step" [@fadeInOutAnimation]>
             <img src="assets/images/step-5.png" width="125">
-            <h5 class="text-white mt-3">CLEAN & <span class="text-blue">DISINFECT</span></h5>
+            <h5 class="text-white mt-3">CLEAN & <span class="text-danger">DISINFECT</span></h5>
             <p>
               Clean & disinfect frequently touched surfaces daily. This includes tables, doorknobs, light switches,
               countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.
@@ -207,9 +209,9 @@
                   </ng-template>
                 </div>
                 <h5 class="infectedCountryName mt-0 mb-1">{{country.country}}</h5>
-                <p class="infectedCountryDetails font-weight-bold"><span class="text-blue">{{country.cases}}
+                <p class="infectedCountryDetails font-weight-bold"><span class="text-danger">{{country.cases}}
                     Cases</span> & <span class="text-danger">{{country.deaths}} Deaths</span></p>
-                <p class="infectedCountryCases text-blue">+{{country.todayCases}} Cases</p>
+                <p class="infectedCountryCases text-danger">+{{country.todayCases}} Cases</p>
                 <p class="infectedCountryDeaths text-danger">+{{country.todayDeaths}} Deaths</p>
               </a>
             </div>
@@ -320,7 +322,7 @@
                 <div class="card-box widget-user bg-d">
                   <div class="text-center">
                     <div class="fa-3x text-center" [class.d-none]="!isLoading">
-                      <i class="fas fa-circle-notch fa-spin m-2 text-blue"></i>
+                      <i class="fas fa-circle-notch fa-spin m-2 text-danger"></i>
                     </div>
                     <h2 [class.d-none]="isLoading" class="font-weight-normal text-success">
                       {{(totalRecoveries / finishedCases * 100) | number:'.1-2'}}%</h2>
@@ -382,15 +384,15 @@
         <h5>Share with your friends, family or coworkers.</h5>
         <p>Keep them up to date with the coronavirus outbreak.</p>
         <a class="btn btn-icon waves-effect btn-blue mr-1" target="_blank"
-          href="https://www.facebook.com/sharer/sharer.php?u=https://coronastatistics.live"> <i
+          href="https://www.facebook.com/sharer/sharer.php?u=http://covid19.richcheng.com"> <i
             class="fab fa-facebook"></i> </a>
         <a class="btn btn-icon waves-effect btn-blue mr-1" target="_blank"
-          href="https://twitter.com/intent/tweet?url=https://coronastatistics.live&hashtags=Covid_19,CoronavirusPandemic,coronastatistics,corona&text=Stay%20Updated%20with%20Live%20Coronavirus%20Tracker">
+          href="https://twitter.com/intent/tweet?url=https://http://covid19.richcheng.com&hashtags=Covid_19,COVID19,CoronavirusPandemic,coronastatistics,corona&text=Stay%20Updated%20with%20Live%20Coronavirus%20Tracker">
           <i class="fab fa-twitter"></i> </a>
         <a class="btn btn-icon waves-effect btn-blue mr-1" target="_blank"
-          href="https://vk.com/share.php?url=https://coronastatistics.live"> <i class="fab fa-vk"></i> </a>
+          href="https://vk.com/share.php?url=http://covid19.richcheng.com"> <i class="fab fa-vk"></i> </a>
         <a class="btn btn-icon waves-effect btn-blue"
-          href="whatsapp://send?text=Coronavirus live statistics and tracker https://coronastatistics.live"
+          href="whatsapp://send?text=Coronavirus live statistics and tracker http://covid19.richcheng.com"
           data-action="share/whatsapp/share"> <i class="fab fa-whatsapp"></i> </a>
       </div>
     </div><!-- end col -->

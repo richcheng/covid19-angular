@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/490f5e80-f14e-4632-a367-baf5d541886c/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/c19-angular-express",
+    "appService.deploySubpath": ""
+}
