@@ -2,10 +2,10 @@ import { Component, HostListener } from '@angular/core';
 @Component({
   selector: 'app-topbar',
   templateUrl: './topbar.component.html',
-  styleUrls: ['./topbar.component.scss']
+  styleUrls: ['./topbar.component.scss'],
 })
 export class TopbarComponent {
-  constructor() { }
+  constructor() {}
 
   deferredPrompt: any;
   showButton = false;
@@ -24,15 +24,13 @@ export class TopbarComponent {
     // Show the prompt
     this.deferredPrompt.prompt();
     // Wait for the user to respond to the prompt
-    this.deferredPrompt.userChoice
-    .then((choiceResult) => {
-    if (choiceResult.outcome === 'accepted') {
-      console.log('User accepted the A2HS prompt');
-    } else {
-      console.log('User dismissed the A2HS prompt');
-    }
-    this.deferredPrompt = null;
-  });
-  
-}
+    this.deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User accepted the A2HS prompt');
+      } else {
+        console.log('User dismissed the A2HS prompt');
+      }
+      this.deferredPrompt = null;
+    });
+  }
 }
